@@ -9,7 +9,7 @@
 
 class HashNode
 {
-public:
+  public:
     // Word
     std::string key;
 
@@ -20,7 +20,7 @@ public:
     HashNode();
 
     // Constructor given key, value
-    HashNode(std::string key, int value);
+    HashNode(std::string nodeKey, int nodeValue);
 
 };
 

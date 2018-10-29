@@ -10,15 +10,15 @@
 
 class HashTable
 {
-private:
+  private:
 
     // Size of HashTable
     int size;
 
     // Search for word and return node
-    HashNode* searchNode(std::string key);
+    HashNode* searchNode(const std::string& key);
 
-public:
+  public:
 
     // Array of pointers to HashNodes
     HashNode** table;
@@ -27,31 +27,31 @@ public:
     HashTable();
 
     // Constructor given size
-    HashTable(int size);
+    HashTable(int tableSize);
 
     // Destructor
     ~HashTable();
 
     // Hash function
-    int hash(std::string key);
+    int hash(const std::string& key);
 
     // Insert key into Hash Table
-    void insert(std::string key);
+    void insert(const std::string& key);
 
     // Insert key, value into Hash Table
-    void insert(std::string key, int value);
+    void insert(const std::string& key, int value);
 
     // Search Hash Table for word
-    bool search(std::string key);
+    bool search(const std::string& key);
 
     // Delete word from Hash Table
-    void deleteKey(std::string key);
+    void deleteKey(const std::string& key);
 
     // Sort Hash Table and return vector of strings
     std::vector<std::string> sort();
 
     // Range Search Hash Table
-    void rangeSearch(std::string first, std::string last);
+    void rangeSearch(const std::string& first, const std::string& last);
 };
 
 

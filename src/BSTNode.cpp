@@ -6,14 +6,14 @@
 
 BSTNode::BSTNode(std::string word)
 {
-    this->data = word;
-    this->count = 1;
-    this->left = nullptr;
-    this->right = nullptr;
+  data = word;
+  count = 1;
+  left = nullptr;
+  right = nullptr;
 }
 
 BSTNode::~BSTNode()
 {
-    delete right;
-    delete left;
+  delete right;
+  delete left;
 }

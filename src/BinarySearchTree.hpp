@@ -12,7 +12,7 @@
 
 class BinarySearchTree
 {
-public:
+  public:
 
     // Default Constructor
     BinarySearchTree();
@@ -24,10 +24,10 @@ public:
     BSTNode* getRoot();
 
     // Search for word in BST, return bool
-    bool searchWord(std::string word);
+    bool searchWord(const std::string& word);
 
     // Insert word into BST
-    void insertWord(std::string word);
+    void insertWord(const std::string& word);
 
     // Delete word from BST
     void deleteWord(std::string word);
@@ -39,7 +39,7 @@ public:
     std::vector<std::string> sort();
 
     // Range Search BST
-    void rangeSearch(std::string first, std::string last);
+    void rangeSearch(const std::string& first, const std::string& last);
 
     // Put values of BST into vector in order
     void inOrder(BSTNode* root, std::vector<std::string>& vec);
@@ -48,7 +48,7 @@ public:
     int getCount();
 
 
-private:
+  private:
     // Root of BST
     BSTNode* root;
 
@@ -56,13 +56,13 @@ private:
     int count;
 
     // Recursive delete word from BST
-    void deleteWord(BSTNode* &root, std::string word);
+    void deleteWord(BSTNode*& root, const std::string& word);
 
     // Recursive in order function to search for words in range
-    void inOrderRange(BSTNode* root, std::string first, std::string last);
+    void inOrderRange(BSTNode* root, const std::string& first, const std::string& last);
 
     // Serach for word in BST, return pointer to Node
-    BSTNode* searchNode(std::string word);
+    BSTNode* searchNode(const std::string& word);
 
 
 };

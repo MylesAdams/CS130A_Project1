@@ -4,17 +4,17 @@
 
 #include "HashNode.hpp"
 
-HashNode::HashNode(std::string key, int value)
+HashNode::HashNode(std::string nodeKey, int nodeValue)
 {
-    this->key = key;
-    this->value = value;
+  key = nodeKey;
+  value = nodeValue;
 }
 
 HashNode::HashNode()
 {
-    // "Null" Node
-    this->key = " ";
+  // "Null" Node
+  key = " ";
 
-    // Default count
-    this->value = 0;
+  // Default count
+  value = 0;
 }

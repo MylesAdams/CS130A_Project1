@@ -10,7 +10,7 @@
 
 class BSTNode
 {
-public:
+  public:
     // Word
     std::string data;
 
@@ -18,10 +18,10 @@ public:
     int count;
 
     // Left Child
-    BSTNode *left;
+    BSTNode* left;
 
     // Right Child
-    BSTNode *right;
+    BSTNode* right;
 
     // Default Constructor
     BSTNode();
